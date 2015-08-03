@@ -2,32 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-00040fffeb6afb58b6a662cbd1a8e303e78ce407.jar" />
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-4b9be0b394cf1ba7297ae7222fe1d54c72be5dea.jar" />
     </item>
     <item
-        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jar="C:\Users\laurie\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-0f50a327a33523eef8edc3a65800d7d54156166b.jar" />
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-8ff64ce38858f0deb716d60098fbfef34344f658.jar" />
     </item>
     <item
-        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-70402582b33ecbdeb286a329d187c91029bdb5ad.jar" />
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-4eef0498e4924fa0f77f90a16c03c958a809d572.jar" />
     </item>
     <item
-        jar="C:\Users\laurie\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jar="C:\Users\laurie\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-4c37c964d74d1917554f051b7db53a2d2f1f5178.jar" />
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-6b1323f3c2fa70cdffee9434cdecdbc713a4e4c7.jar" />
+    </item>
+    <item
+        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-fae64fbe3fb64c195c6fa486a95f0cd1f8c6c699.jar" />
     </item>
 
 </items>

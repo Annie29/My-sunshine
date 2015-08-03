@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="Check me!"
+        android:summary="Just a sample"
+        android:defaultValue="true" />  -->
+    <EditTextPreference
+        android:key="@string/location_key"
+        android:title="@string/zip"
+        android:defaultValue="@string/default_location"
+        android:inputType="text"
+        android:singleLine="true"
+        android:summary="@string/location_summary"     />
+        <!--android:entryValues="@array/pref_syncConnectionTypes_values"-->
+        <!--android:defaultValue="@string/pref_syncConnectionTypes_default" /> -->
+
+    <ListPreference
+        android:key="@string/unit_key"
+        android:title="@string/pref_unit_to_use"
+        android:defaultValue="Metric"
+        android:entries="@array/pref_unit_titles"
+        android:entryValues="@array/pref_unit_choices"
+        android:negativeButtonText="@string/cancel_button"
+        android:positiveButtonText="@null" />
+
+
+</PreferenceScreen>

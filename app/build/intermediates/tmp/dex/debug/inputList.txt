@@ -1,5 +1,6 @@
 C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\classes\debug
-C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-4c37c964d74d1917554f051b7db53a2d2f1f5178.jar
-C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-70402582b33ecbdeb286a329d187c91029bdb5ad.jar
-C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-0f50a327a33523eef8edc3a65800d7d54156166b.jar
-C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-00040fffeb6afb58b6a662cbd1a8e303e78ce407.jar
+C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-6b1323f3c2fa70cdffee9434cdecdbc713a4e4c7.jar
+C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-8ff64ce38858f0deb716d60098fbfef34344f658.jar
+C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-4eef0498e4924fa0f77f90a16c03c958a809d572.jar
+C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-fae64fbe3fb64c195c6fa486a95f0cd1f8c6c699.jar
+C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-4b9be0b394cf1ba7297ae7222fe1d54c72be5dea.jar
