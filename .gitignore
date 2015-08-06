@@ -43,3 +43,13 @@ Temporary Items
 .apdisk
 app/src/main/res/values/secret_strings.xml
 *.class
+*.class
+app/build/intermediates/classes/debug/com/example/android/sunshine/app/R$id.class
+*.class
+*.class
+app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class
+*.class
+app/build/intermediates/classes/debug/com/example/android/sunshine/app/MainActivity.class
+*.class
+*.class
+*.class

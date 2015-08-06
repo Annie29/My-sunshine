@@ -9,12 +9,8 @@
 package com.example.android.project1movies.app;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -22,6 +18,7 @@ import android.view.MenuItem;
  * A solution to project 1 of the Android Nanodegree by Udacity, as
  * described in
  * https://docs.google.com/document/d/1ZlN1fUsCSKuInLECcJkslIqvpKlP7jWL2TP9m6UiA6I/pub?embedded=true
+ *
  * @author Laurie White
  * @version 5 August 2015
  */
@@ -35,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new ForecastFragment())
+                    .add(R.id.container, new MovieFragment())
                     .commit();
         }
     }

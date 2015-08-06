@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2015 Laurie White (copyright@lauriewhite.org)
+ *
+ */
+
 package com.example.android.project1movies.app;
 
 
@@ -18,23 +23,22 @@ import java.util.List;
  * @author Laurie White
  * @version 7/27/2015.
  */
-//  TODO: Remove vestiges of trying to make this a List
 public class MovieCollection  implements Iterable<MovieData> {
+    private static String LOG_TAG = MovieData.class.getSimpleName();
+
     /**
      * Create a new MovieCollection from a string representing its JSON object.
      * @param jsonData the JSON object's representation
      */
     public MovieCollection(String jsonData){
         mData = new ArrayList<MovieData>();
-        //  TODO: Consider changing the parameter to a JSON object.
         try {
             getMovieDataFromJson(jsonData);
         }
         catch (org.json.JSONException e)
         {
-            Log.d("Movie Collection!!!",  "You still don't get JSON!");
+            Log.e(LOG_TAG, "Cannot parse the Movie information");
         }
-        Log.d("Movie Collection!!!", "Done constructing, there are " + mData.size() + " items");
     }
 
     /**
@@ -53,7 +57,7 @@ public class MovieCollection  implements Iterable<MovieData> {
 
     /**
      * How many movies are in this collection?
-     * @return
+     * @return the size of the collection
      */
     public int size() {
         if (mData == null)
@@ -61,6 +65,10 @@ public class MovieCollection  implements Iterable<MovieData> {
         return mData.size();
     }
 
+    /**
+     * What movies are in this collection?
+     * @return the list of MovieData objects in the collection
+     */
     public List<MovieData> getData(){
         return mData;
     }
@@ -72,7 +80,6 @@ public class MovieCollection  implements Iterable<MovieData> {
      * Fortunately parsing is easy:  constructor takes the JSON string and converts it
      * into an Object hierarchy for us.
      */
-    //  TODO: Should this return MovieDatas?  or just update the instance field?
     private void getMovieDataFromJson(String moviesJsonStr)
             throws JSONException {
 
@@ -82,8 +89,7 @@ public class MovieCollection  implements Iterable<MovieData> {
         JSONObject movieJson = new JSONObject(moviesJsonStr);
         JSONArray movieArray = movieJson.getJSONArray(TMD_LIST);
 
-        // The MovieDatabase (themoviedb.org) returns
-        //  TODO:  Fix this up, based on the actual stuff that gets returned!
+        // The MovieDatabase (themoviedb.org) returns a collection of movies
 
         // Go through the JSON objects representing each movie
         for (int i = 0; i < movieArray.length(); i++) {
@@ -107,6 +113,9 @@ public class MovieCollection  implements Iterable<MovieData> {
 
     private List<MovieData> mData = null;
 
+    /**
+     * A class that contains the iterators operations.
+     */
     private class MovieDataIterator implements Iterator<MovieData> {
         private int mCurrent;
 

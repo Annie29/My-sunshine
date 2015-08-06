@@ -1,27 +1,19 @@
 /*
- * Copyright (C) 2014 The Android Open Source Project
+ * Copyright (C) 2015 Laurie White (copyright@lauriewhite.org)
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * Project based on Project Sunshine from Udacity's "Developing
+ * Android Apps" course at
+ * https://www.udacity.com/course/developing-android-apps--ud853
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
  */
+
 
 package com.example.android.project1movies.app;
 
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,7 +26,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-public class DetailActivity extends ActionBarActivity {
+public class DetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,52 +63,32 @@ public class DetailActivity extends ActionBarActivity {
 
             return true;
         }
-  /*      if (id == R.id.action_share)
-        {
-            //doShare();
-
-            mShareActionProvider = (ShareActionProvider) item.getActionProvider();
-            return true;
-        }
-*/
         return super.onOptionsItemSelected(item);
     }
+
     // Somewhere in the application.
     public void doShare(Intent shareIntent) {
         // When you want to share set the share intent.
 //        mShareActionProvider.setShareIntent(shareIntent);
     }
+
     /**
      * A placeholder fragment containing a simple view.
      */
     public static class DetailFragment extends Fragment {
 
         public final String LOG_TAG = DetailActivity.class.getSimpleName();
-        public final String SHARE_HASHTAG = "#SUNSHINE_APP";
-        private String mForecastStr = "";
 
         private MovieData mCurrentMovie;
+
         @Override
         public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
             inflater.inflate(R.menu.detailfragment, menu);
-            MenuItem menuItem = menu.findItem(R.id.action_share);
-            ShareActionProvider shareActionProvider =
-                    (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
 
-            if (shareActionProvider != null) {
-                shareActionProvider.setShareIntent(createShareForecastIntent());
-            }
-            else {
-                Log.d(LOG_TAG, "Share action provider is null?");
-            }
-
-
-            //super.onCreateOptionsMenu(menu, inflater);
         }
 
         public DetailFragment() {
             setHasOptionsMenu(true);
-
         }
 
         @Override
@@ -140,10 +112,10 @@ public class DetailActivity extends ActionBarActivity {
                                 + "/10 of " + mCurrentMovie.getVotes() + " votes");
                 ((TextView) rootView.findViewById(R.id.detail_plot_synopsis))
                         .setText("Overview: " + mCurrentMovie.getOverview());
+                //  TODO: Handle cases with no posters in this size.
                 String url = rootView.getContext().getString(R.string.API_URL_image_base)
                         + rootView.getContext().getString(R.string.API_image_size_detail)
                         + mCurrentMovie.getPosterURL();
-                Log.d("Detail View ", "!!! URL is " + url);
                 ImageView imageView = (ImageView) rootView.findViewById(R.id.detail_poster);
                 Picasso.with(rootView.getContext())
                         .load(url)
@@ -151,25 +123,8 @@ public class DetailActivity extends ActionBarActivity {
 
             }
 
-
-//            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-//                mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
-//                ((TextView) rootView.findViewById(R.id.detail_text))
-//                        .setText(mForecastStr);
-//
-//            }
-
-                return rootView;
+            return rootView;
         }
 
-
-        private Intent createShareForecastIntent() {
-            Intent shareIntent = new Intent(Intent.ACTION_SEND);
-            shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-            shareIntent.setType("text/plain");
-            shareIntent.putExtra(Intent.EXTRA_TEXT, mForecastStr + SHARE_HASHTAG);
-            //  TODO: Send the whole MovieData
-            return shareIntent;
-        }
     }
 }

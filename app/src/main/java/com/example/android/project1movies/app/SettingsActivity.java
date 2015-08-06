@@ -1,3 +1,11 @@
+/*
+ * Copyright (C) 2015 Laurie White (copyright@lauriewhite.org)
+ *
+ * Project based on Project Sunshine from Udacity's "Developing
+ * Android Apps" course at
+ * https://www.udacity.com/course/developing-android-apps--ud853
+ *
+ */
 package com.example.android.project1movies.app;
 
 import android.os.Bundle;
@@ -21,15 +29,12 @@ public class SettingsActivity extends PreferenceActivity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Add 'general' preferences, defined in the XML file
-        // TODO/Done: Add preferences from XML
         addPreferencesFromResource(R.xml.preferences);
 
         // For all preferences, attach an OnPreferenceChangeListener so the UI summary can be
         // updated when the preference changes.
-        // TODO: Add preferences
-        bindPreferenceSummaryToValue(findPreference(getString(R.string.location_key)));
-        bindPreferenceSummaryToValue(findPreference(getString(R.string.unit_key)));
         bindPreferenceSummaryToValue(findPreference(getString(R.string.PREF_sort_order_key)));
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.PREF_minimum_votes_key)));
     }
 
     /**

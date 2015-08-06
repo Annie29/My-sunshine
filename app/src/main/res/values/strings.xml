@@ -8,16 +8,9 @@
     <string name="action_share">Share</string>
 
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
-    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_detail">Detailed Movie Information</string>
     <string name="hello_detail">Hello detailed world!</string>
-    <string name="location_key">location</string>
-    <string name="default_location">32607</string>
 
-    <string name="zip">Zip code</string>
-    <string name="location_summary">Zip code for desired location</string>
-    <string name="unit_key">unit_list</string>
-
-    <string name="show_loc">Show Location</string>
 
 
 
@@ -33,6 +26,7 @@
     <string name="API_sort_query"       translate="false">sort_by</string>
     <string name="API_sort_by_pop"      translate="false">popularity.desc</string>
     <string name="API_sort_by_vote"     translate="false">vote_average.desc</string>
+    <string name="API_use_minimum_votes"     translate="false">vote_count.gte</string>
 
 
     <!--Strings for preferences -->
@@ -40,20 +34,20 @@
     <string name="PREF_sort_title">Sort list by:</string>
     <string name="PREF_option_popularity">Popularity</string>
     <string name="PREF_option_rating">Rating (all)</string>
-    <string name="PREF_option_rating_50">Rating (at least a minimum number of votes)</string>
+    <string name="PREF_option_rating_count">Rating (for a minimum number of votes)</string>
     <string-array name="PREF_sort_titles">
         <item>@string/PREF_option_popularity</item>
         <item>@string/PREF_option_rating</item>
-        <item>@string/PREF_option_rating_50</item>
+        <item>@string/PREF_option_rating_count</item>
     </string-array>
     <string-array name="PREF_sort_choices">
         <item>@string/PREF_option_popularity</item>
         <item>@string/PREF_option_rating</item>
-        <item>@string/PREF_option_rating_50</item>
+        <item>@string/PREF_option_rating_count</item>
     </string-array>
     <string name="PREF_minimum_votes_key">minimum_votes</string>
     <string name="PREF_minimum_votes_title">Minimum votes</string>
     <string name="PREF_minimum_votes_default">50</string>
-    <string name="PREF_minimum_vote_summary">To ensure enough voters have selected a favorite, increase this.</string>
+    <string name="PREF_minimum_vote_summary">To ensure enough voters have voted on a movie, increase this.</string>
 
 </resources>
