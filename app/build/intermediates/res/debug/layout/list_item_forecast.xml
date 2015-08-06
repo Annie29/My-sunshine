@@ -15,4 +15,4 @@
         android:id="@+id/grid_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-</LinearLayout><!-- From: file:/C:/Users/laurie/AndroidStudioProjects/Sunshine-Version-2/app/src/main/res/layout/list_item_forecast.xml -->
+</LinearLayout><!-- From: file:/C:/Users/laurie/Documents/GitHub/Project%201%20Popular%20Movies/app/src/main/res/layout/list_item_forecast.xml -->

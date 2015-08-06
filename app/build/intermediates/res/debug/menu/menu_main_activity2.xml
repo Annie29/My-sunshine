@@ -1,8 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.sunshine.app.MainActivity2Activity">
+    tools:context="com.example.android.project1movies.app.MainActivity2Activity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/C:/Users/laurie/AndroidStudioProjects/Sunshine-Version-2/app/src/main/res/menu/menu_main_activity2.xml -->
+<!-- From: file:/C:/Users/laurie/Documents/GitHub/Project%201%20Popular%20Movies/app/src/main/res/menu/menu_main_activity2.xml -->

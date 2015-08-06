@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.sunshine.app.test">
+    package="com.example.android.project1movies.app.test">
 
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="21" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.example.android.sunshine.app"
+                     android:targetPackage="com.example.android.project1movies.app"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.example.android.sunshine.app"/>
+                     android:label="Tests for com.example.android.project1movies.app"/>
 </manifest>

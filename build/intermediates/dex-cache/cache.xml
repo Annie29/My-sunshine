@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\classes.jar"
+        jar="C:\Users\laurie\Documents\GitHub\Project 1 Popular Movies\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-4b9be0b394cf1ba7297ae7222fe1d54c72be5dea.jar" />
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\laurie\Documents\GitHub\Project 1 Popular Movies\app\build\intermediates\pre-dexed\debug\classes-f75f0525840c05c6be1fd9a636fb6910b1ae7fa9.jar" />
     </item>
     <item
         jar="C:\Users\laurie\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
@@ -14,6 +14,27 @@
         revision="21.1.2"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
         <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-8ff64ce38858f0deb716d60098fbfef34344f658.jar" />
+    </item>
+    <item
+        jar="C:\Users\laurie\Documents\GitHub\Project 1 Popular Movies\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\laurie\Documents\GitHub\Project 1 Popular Movies\app\build\intermediates\pre-dexed\debug\classes-4ce63f5ab8ff578be6cac36b536e08fcb4f2f78e.jar" />
+    </item>
+    <item
+        jar="C:\Users\laurie\Documents\GitHub\Project 1 Popular Movies\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\laurie\Documents\GitHub\Project 1 Popular Movies\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-c83b9999990f6ed16b233d09b09735a1e45cf89c.jar" />
+    </item>
+    <item
+        jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\pre-dexed\debug\classes-4b9be0b394cf1ba7297ae7222fe1d54c72be5dea.jar" />
     </item>
     <item
         jar="C:\Users\laurie\AndroidStudioProjects\Sunshine-Version-2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\libs\internal_impl-22.2.1.jar"

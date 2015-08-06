@@ -5,4 +5,17 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!--  I really should be using more material design
+          here, but I still really don't understand
+          material design, so....-->
+    <style name="ProjectButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">#ff4dcea4</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

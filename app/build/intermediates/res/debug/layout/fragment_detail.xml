@@ -1,14 +1,56 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.sunshine.app.DetailActivity.DetailFragment">
+    tools:context="com.example.android.project1movies.app.DetailActivity.DetailFragment">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:id="@+id/detail_text"
-        android:layout_height="wrap_content" />
+    <!--  TODO: Update this and create a style -->
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/hello_world"
+         />
+
+    <ImageView
+        android:id="@+id/detail_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_title" />
+
+    <TextView
+        android:id="@+id/detail_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_poster"
+        android:text="@string/hello_world" />
+    />
+
+    <TextView
+        android:id="@+id/detail_vote_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_release_date"
+        android:singleLine="false"
+        android:text="@string/hello_world" />
+    />
+
+    <TextView
+        android:id="@+id/detail_plot_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_vote_average"
+
+        android:text="@string/hello_world" />
+
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/laurie/AndroidStudioProjects/Sunshine-Version-2/app/src/main/res/layout/fragment_detail.xml -->
+</ScrollView><!-- From: file:/C:/Users/laurie/Documents/GitHub/Project%201%20Popular%20Movies/app/src/main/res/layout/fragment_detail.xml -->
